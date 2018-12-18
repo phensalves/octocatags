@@ -32,3 +32,5 @@ group :test do
   gem 'chromedriver-helper'
   gem 'rspec'
 end
+
+gem 'graphiql-rails', group: :development
