@@ -1,0 +1,2 @@
+class StarredRepository < ApplicationRecord
+end

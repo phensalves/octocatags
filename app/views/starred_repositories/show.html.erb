@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Github:</strong>
+  <%= @starred_repository.github_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @starred_repository.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @starred_repository.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @starred_repository.url %>
+</p>
+
+<%= link_to 'Edit', edit_starred_repository_path(@starred_repository) %> |
+<%= link_to 'Back', starred_repositories_path %>
