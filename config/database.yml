@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: octocatags_development
+
+test:
+  <<: *default
+  database: octocatags_test
+
+production:
+  <<: *default
+  database: octocatags_production
+  username: octocatags
+  password: <%= ENV['OCTOCATAGS_DATABASE_PASSWORD'] %>
