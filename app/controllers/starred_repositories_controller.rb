@@ -9,6 +9,10 @@ class StarredRepositoriesController < ApplicationController
     @starred_repositories = StarredRepository.all
   end
 
+  def repos
+    binding.pry
+  end
+
   # GET /starred_repositories/1
   # GET /starred_repositories/1.json
   def show; end

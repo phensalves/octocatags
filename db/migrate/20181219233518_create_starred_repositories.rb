@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class CreateStarredRepositories < ActiveRecord::Migration[5.2]
   def change
     create_table :starred_repositories do |t|
@@ -7,8 +5,8 @@ class CreateStarredRepositories < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :description
       t.string :url
-
-      t.timestamps
+      t.string :language
+      t.references :github_users, foreign_key: true
     end
   end
 end

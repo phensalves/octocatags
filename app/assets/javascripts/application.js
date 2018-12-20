@@ -14,6 +14,6 @@
 //= require activestorage
 //= require_tree .
 //= require vue
-//= require vue-router (optional)
-//= require vue-resource (optional)
-//= require vuex (optional)
+//= require vue-router
+//= require vue-resource
+//= require vuex
